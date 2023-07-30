@@ -58,7 +58,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function() {
 
     const newBalance = parseFloat(balancePresent);
     const balance = newBalance - newWithdrawAmount;
-    if (balance > 0) {
+    if (balance > -1) {
         inputBalancePresent.innerText = balance;
     } else {
         alert("Have not minimum balance!!!")
