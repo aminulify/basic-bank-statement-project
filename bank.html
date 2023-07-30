@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Bank Transaction</title>
+    <!-- css files  -->
+    <link rel="stylesheet" href="js/index.css">
+    <!-- logo favicon  -->
+    <link rel="icon" href="img/logo icon.png">
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="text-4xl font-semibold text-center mt-10">Let's see my <span class="font-bold text-green-600">Transaction Statement</span> !!!</h1>
+    <div class="grid grid-cols-1 gap-6 my-10 w-9/12 mx-auto  md:grid-cols-1 lg:grid-cols-3">
+        <div class="bg-green-500 p-10 shadow-md rounded-md">
+            <h4 class="text-2xl mb-1 text-white">Deposit</h4>
+            <h2 class="text-5xl font-medium text-white">$<span id="deposit-total">00</span></h2>
+        </div>
+
+        <div class="bg-orange-500 p-10 shadow-md rounded-md">
+            <h4 class="text-2xl mb-1 text-white">Withdraw</h4>
+            <h2 class="text-5xl font-medium text-white">$<span id="withdraw-total">00</span></h2>
+        </div>
+
+        <div class="bg-indigo-500 p-10 shadow-md rounded-md">
+            <h4 class="text-2xl mb-1 text-white">Balance</h4>
+            <h2 class="text-5xl font-medium text-white">$<span id="balance-total">00</span></h2>
+        </div>
+    </div>
+
+    <!-- second part  -->
+    <div class="grid grid-cols-1 gap-6 my-5 w-9/12 mx-auto md:grid-cols-1 lg:grid-cols-2">
+        <div class="p-10 bg-green-400 rounded-md shadow-md">
+            <h2 class="text-2xl font-medium text-white mb-4">Please Deposit</h2>
+            <input type="text" class="p-1 rounded-md mb-4" size="40" placeholder="$ Amount you want to deposit" id="input-deposit">
+            <br>
+            <button id="btn-deposit" class="px-16 py-2 bg-green-700 text-white font-medium rounded-md hover:bg-green-800">Deposit</button>
+        </div>
+
+        <div class="p-10 bg-orange-400 rounded-md shadow-md">
+            <h2 class="text-2xl font-medium text-white mb-4">Please Withdraw</h2>
+            <input type="text" class="p-1 rounded-md mb-4" size="40" placeholder="$ Amount you want to withdraw" id="input-withdraw">
+            <br>
+            <button id="btn-withdraw" class="px-16 py-2 bg-orange-700 text-white font-medium rounded-md hover:bg-orange-800">Withdraw</button>
+        </div>
+    </div>
+
+
+    <!-- js file link  -->
+    <script src="js/login.js"></script>
+    <script src="js/deposit.js"></script>
+</body>
+
+</html>

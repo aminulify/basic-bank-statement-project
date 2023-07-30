@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Bank</title>
+    <!-- css files  -->
+    <link rel="stylesheet" href="js/index.css">
+    <!-- logo favicon  -->
+    <link rel="icon" href="img/logo icon.png">
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="text-5xl text-center mt-20 font-medium">Welcome to our <span class="font-bold text-green-600">Bangladesh Bank</span> !!!</h1>
+    <header>
+        <main>
+            <section class="bg-green-100 w-9/12 mx-auto mt-12 p-8">
+                <h3 class="text-3xl font-medium text-green-700">Please Login</h3>
+                <div class="flex flex-col ">
+                    <input type="email" id="input-email" class="my-5 p-2 rounded-md" placeholder="Enter Your Email">
+                    <input type="password" class="mb-5 p-2 rounded-md" id="input-pass" placeholder="Password">
+                    <button class="btn bg-green-600 py-2 rounded-md text-white" id="btn-login-submit">Submit</button>
+                </div>
+            </section>
+        </main>
+    </header>
+
+
+    <!-- js file link  -->
+    <script src="js/login.js"></script>
+    <script src="js/deposit.js"></script>
+</body>
+
+</html>
